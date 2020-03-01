@@ -71,6 +71,7 @@ def parse_file( fname, points, transform, screen, color ):
         elif instruct == "display\n":
             clear_screen(screen)
             draw_lines(points,screen,color)
+            display(screen)
         elif instruct == "save\n":
             instruct=f.readline().strip("\n")
             clear_screen(screen)
